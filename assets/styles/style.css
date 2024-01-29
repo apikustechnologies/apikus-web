@@ -1,0 +1,102 @@
+:root {
+    --brand: 0, 0, 0;
+    --text-primary: 255, 255, 255;
+}
+
+@font-face {
+    font-family: 'Geist';
+    src: url("/assets/fonts/GeistVariableVF.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: 'Geist Mono';
+    src: url("/assets/fonts/GeistMonoVariableVF.woff2") format("woff2");
+}
+
+body {
+    font-family: 'Geist', 'Inter', system-ui, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: rgba(var(--brand), 1);
+    color: rgba(var(--text-primary), 0.95);
+    letter-spacing: -0.005em;
+    background-image: url("/assets/images/bg-pattern.webp");
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.tag {
+    background-color: rgba(var(--text-primary),0.1);
+    border: 1px solid rgba(var(--text-primary),0.1);
+    font-size: 13px;
+    line-height: 1;
+    text-transform: uppercase;
+    padding: 6px 12px 5px 12px;
+    border-radius: 4px;
+    letter-spacing: 0.1em;
+}
+
+.hero-soon {
+    width: 100%;
+    height: 100dvh;
+    margin: 0 auto;
+    max-width: 1240px;
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .hero-title {
+        font-size: 40px;
+        line-height: 1.2;
+        font-weight: 400;
+        margin-top: 32px;
+        margin-bottom: 0px;
+        letter-spacing: -0.05em;
+    }
+
+    .hero-description {
+        font-size: 16px;
+        line-height: 1.5;
+        font-weight: 300;
+        opacity: 0.75;
+        margin-top: 16px;
+        margin-bottom: 0px;
+    }
+
+    @media only screen and (min-width: 600px) {
+        .hero-title  {
+            font-size: 64px;
+        }
+    
+        .hero-description {
+            font-size: 24px;
+            padding: 0 200px;
+        }
+      }
+}
+
+a.button-primary {
+    margin-top: 40px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: rgba(var(--brand, 1));
+    text-decoration: none;
+    border-radius: 8px;
+    background-color: rgba(var(--text-primary), 1);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    .button-tag {
+        font-size: 12px;
+        line-height: 1;
+        text-transform: uppercase;
+        opacity: 0.5;
+    }
+}
