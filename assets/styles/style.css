@@ -49,6 +49,12 @@ body {
     justify-content: center;
     text-align: center;
 
+    .logo {
+        display: flex;
+        height: 64px;
+        margin-bottom: 40px;
+    }
+
     .hero-title {
         font-size: 40px;
         line-height: 1.2;
@@ -68,6 +74,11 @@ body {
     }
 
     @media only screen and (min-width: 600px) {
+
+        .logo {
+            margin-bottom: 80px;
+        }
+
         .hero-title  {
             font-size: 64px;
         }
