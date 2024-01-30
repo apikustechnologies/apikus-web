@@ -1,0 +1,13 @@
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style xmlns="http://www.w3.org/2000/svg">
+        #apikusFaviconBg { fill: black; }
+        #apikusFaviconShape { fill: white; }
+
+        @media (prefers-color-scheme: dark) {
+            #apikusFaviconBg { fill: white; }
+            #apikusFaviconShape { fill: black; }
+        }
+    </style>
+<rect id="apikusFaviconBg" width="400" height="400" rx="80"/>
+<path id="apikusFaviconShape" d="M199.519 70.6667L312 306.667H289.388H174.524L203.365 204.976L155.296 306.667H88L199.519 70.6667Z"/>
+</svg>
