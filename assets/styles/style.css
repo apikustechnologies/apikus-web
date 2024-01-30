@@ -53,6 +53,7 @@ body {
         display: flex;
         height: 64px;
         margin-bottom: 40px;
+        max-width: 100%;
     }
 
     .hero-title {
